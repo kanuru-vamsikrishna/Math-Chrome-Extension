@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Math Extension",
+  "version": "1.0",
+  "description": "Perform basic arithmetic operations: add, subtract, multiply, divide.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": []
+}

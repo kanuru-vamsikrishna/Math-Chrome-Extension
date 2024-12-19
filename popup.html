@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <style>
+    /* General reset for modern appearance */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #111827;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 400px; /* Set a minimum height for the popup */
+      width: 400px; /* Set a fixed width for the popup */
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #1f2937;
+    }
+  
+    .input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+  
+    input {
+      width: 150px;
+      padding: 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      transition: box-shadow 0.3s ease;
+    }
+  
+    input:focus {
+      box-shadow: 0 0 0 2px #2563eb;
+      border-color: #2563eb;
+    }
+  
+    .button-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+  
+    button {
+      padding: 10px 15px;
+      font-size: 1rem;
+      color: #ffffff;
+      background-color: #2563eb;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    button:hover {
+      background-color: #1e40af;
+    }
+  
+    button:active {
+      background-color: #1d4ed8;
+    }
+  
+    #result {
+      margin-top: 20px;
+      font-size: 1.25rem;
+      color: #1f2937;
+      text-align: center;
+    }
+  </style>
+  
+</head>
+<body>
+  <h2>Scientific Calculator</h2>
+  <div class="input-group">
+    <input id="num1" type="number" placeholder="First number">
+    <input id="num2" type="number" placeholder="Second number">
+  </div>
+  <div class="button-group">
+    <button id="add">Add</button>
+    <button id="subtract">Subtract</button>
+    <button id="multiply">Multiply</button>
+    <button id="divide">Divide</button>
+    <button id="sqrt">Square Root (1st Number)</button>
+    <button id="pow">Power</button>
+    <button id="sin">Sine (1st Number)</button>
+    <button id="cos">Cosine (1st Number)</button>
+    <button id="tan">Tangent (1st Number)</button>
+    <button id="clear">Clear</button>
+  </div>
+  <h3 id="result">Result: </h3>
+  <script src="popup.js"></script>
+</body>
+</html>
